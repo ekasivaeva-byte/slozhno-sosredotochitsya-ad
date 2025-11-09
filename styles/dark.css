@@ -1,16 +1,54 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 :root.theme-dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --accent-color: #ff0070;
+  --text-accent-color: #000028;
+  --page-background-color: #000028;
+  --text-color: #f1b2ce;
+  --title-color: #db00ff;
+  --hover-menu: #FF007066;
+  --title-shadow: #ff0070;
+  --background-image: url("../images/cover-image-dark.png");
+
+  --page-padding: 10px;
+  --header-text-font-family: "IBM Plex Mono";
+  --text-bold: 700;
+  --text-menu-bold: 400;
 }
 
 .theme-dark .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+  background: var(--background-image);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.theme-dark .rec-label {
+  display: block;
+  position: absolute;
+  color: var(--accent-color);
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.theme-dark .rec-label::after {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin-left: 10px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  box-shadow: 0 0 4px 2px var(--accent-color);
+}
+
+.theme-auto .page {
+    background: url('../images/cover-image-dark.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-color: #000028;
+}
+
+.theme-auto .header.decorated-zone::before,
+.theme-auto .header.decorated-zone::after {
+  display: none;
 }
