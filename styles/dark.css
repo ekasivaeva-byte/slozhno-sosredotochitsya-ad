@@ -1,13 +1,12 @@
 :root.theme-dark {
   --accent-color: #ff0070;
   --text-accent-color: #000028;
-  --page-background-color: #000028;
+  --page-bd-color: #000028;
   --text-color: #f1b2ce;
   --title-color: #db00ff;
   --hover-menu: #FF007066;
   --title-shadow: #ff0070;
   --background-image: url("../images/cover-image-dark.png");
-
   --page-padding: 10px;
   --header-text-font-family: "IBM Plex Mono";
   --text-bold: 700;
@@ -33,10 +32,17 @@
   box-shadow: 0 0 4px 2px var(--accent-color);
 }
 
+.theme-dark .page {
+  background: url('../images/cover-image-dark.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--page-bd-color);
+}
+
 .theme-auto .page {
-    background: url('../images/cover-image-dark.png');
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    background-color: #000028;
+  background: url('../images/cover-image-dark.png'), var(--page-bd-color);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }

@@ -15,7 +15,7 @@
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  background-color: var(--page-background-color);
+  background-color: var(--page-bd-color);
 }
 
 /* Скрываем REC в светлой теме */
@@ -29,7 +29,7 @@
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    background-color: #fff1f7;
+    background-color: var(--page-bd-color);
   }
 
   .theme-auto {
