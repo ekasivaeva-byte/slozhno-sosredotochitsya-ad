@@ -132,10 +132,6 @@
   width: 100%;
 }
 
-.info-content {
-  margin-inline: 10px;
-}
-
 .info-content-title {
   color: var(--accent-color);
   font-family: var(--header-text-font-family);
@@ -287,7 +283,8 @@
   .info-content {
     display: flex;
     flex-direction: column;
-    gap: 20px
+    gap: 20px;
+    padding: 0 var(--page-padding);
   }
 
   .info-content-title {
@@ -322,13 +319,13 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    padding: 0 var(--page-padding)
   }
 
   .image-content-text {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 0 var(--page-padding);
   }
 
   .image-content-text-item {
@@ -428,13 +425,13 @@
   }
 
   .header_title {
-  display: flex;
-  align-items: center;
-  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  line-height: 83%;
-  grid-column: 1/4;
-  grid-row: 2;
-  margin-block-start: clamp(65px, calc(100% / 6), 173px);
+    display: flex;
+    align-items: center;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    line-height: 83%;
+    grid-column: 1/4;
+    grid-row: 2;
+    margin-block-start: clamp(65px, calc(100% / 6), 173px);
   }
 
   .header_description {
@@ -456,7 +453,8 @@
 
   .info-content {
     display: flex;
-    gap: 20px
+    gap: 20px;
+    padding: 0 var(--page-padding);
   }
 
   .info-content-title {
@@ -484,7 +482,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 0 20px;
+    padding: 0 var(--page-padding);
   }
 
   .info-content-text {
@@ -492,7 +490,6 @@
     flex-direction: column;
     gap: 20px;
     width: 100%;
-    padding: 0 var(--page-padding);
   }
 
   .info-content:nth-child(2)>.info-content-text:nth-child(2) {
@@ -638,7 +635,8 @@
 
   .info-content {
     display: flex;
-    gap: 20px
+    gap: 20px;
+    padding: 0 var(--page-padding);
   }
 
   .info-content-title {
@@ -659,19 +657,11 @@
     width: 100%;
   }
 
-  .info-content:nth-child(1) {
-    padding: 0 var(--page-padding);
-  }
-
   .info-content:nth-child(2) {
     display: flex;
     flex-direction: column;
     width: 100%;
     padding: 0 20px;
-  }
-
-  .info-content:nth-child(1) {
-    padding: 0 var(--page-padding);
   }
 
   .info-content-text {
