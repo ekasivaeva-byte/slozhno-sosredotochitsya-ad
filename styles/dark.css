@@ -14,13 +14,6 @@
   --text-menu-bold: 400;
 }
 
-.theme-dark .page {
-  background: var(--background-image);
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-}
-
 .theme-dark .rec-label {
   display: block;
   position: absolute;
@@ -46,9 +39,4 @@
     background-position: center;
     background-size: cover;
     background-color: #000028;
-}
-
-.theme-auto .header.decorated-zone::before,
-.theme-auto .header.decorated-zone::after {
-  display: none;
 }

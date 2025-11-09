@@ -5,6 +5,10 @@
   font-family: var(--header-text-font-family);
   font-weight: var(--text-menu-bold);
   width: 100%;
+  background: var(--background-image);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 
 .rec-label {
@@ -30,8 +34,8 @@
 }
 
 /*уголки*/
-.page::before,
-.page::after {
+.header::before,
+.header::after {
   content: "";
   position: absolute;
   width: 25px;
@@ -39,14 +43,14 @@
   z-index: 1;
 }
 
-.page::before {
+.header::before {
   top: var(--page-padding);
   right: var(--page-padding);
   border-top: 1px solid var(--accent-color);
   border-right: 1px solid var(--accent-color);
 }
 
-.page::after {
+.header::after {
   bottom: var(--page-padding);
   left: var(--page-padding);
   border-bottom: 1px solid var(--accent-color);
@@ -54,6 +58,7 @@
 }
 
 .header {
+  position: relative;
   padding-top: 20px;
   height: 100vh;
   min-height: 100vh;
@@ -226,6 +231,11 @@
     height: 668px;
   }
 
+  .header::after {
+    bottom: var(--page-padding);
+    left: var(--page-padding);
+  }
+
   .header__theme-menu {
     display: flex;
     justify-content: flex-end;
@@ -244,18 +254,18 @@
     font-size: 18px;
   }
 
-    .header_title {
-    display: flex;
-    align-items: center;
-    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    line-height: 83%;
-    grid-column: 1/3;
-    grid-row: 2;
-    margin-block-start: 65px;
-    margin-inline: 10px;
+  .header_title {
+  display: flex;
+  align-items: center;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 83%;
+  grid-column: 1/3;
+  grid-row: 2;
+  margin-block-start: 65px;
+  margin-inline: 10px;
   }
 
-.header_description {
+  .header_description {
     position: relative;
     height: min-content;
     width: 95%;
@@ -266,11 +276,11 @@
     margin-block-start: 55px;
     margin-block-end: 66px;
     margin-inline: 10px;
-  }
+    }
 
   .main {
     gap: 50px;
-    padding: 0px 10px;
+    margin-block-start: 40px;
     margin-block-end: 40px;
   }
 
@@ -286,6 +296,8 @@
   }
 
   .info-content-text-item {
+    display: flex;
+    flex-direction: column;
     gap: 10px;
     flex: 1 1 0px;
     width: 100%;
@@ -389,6 +401,11 @@
   .header {
     height: 1024px;
   }
+
+  .header::after {
+    bottom: var(--page-padding);
+    left: var(--page-padding);
+  }
   
   .header__theme-menu {
     display: flex;
@@ -409,14 +426,14 @@
     font-size: 18px;
   }
 
-    .header_title {
-    display: flex;
-    align-items: center;
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    line-height: 83%;
-    grid-column: 1/4;
-    grid-row: 2;
-    margin-block-start: clamp(65px, calc(100% / 6), 173px);
+  .header_title {
+  display: flex;
+  align-items: center;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  line-height: 83%;
+  grid-column: 1/4;
+  grid-row: 2;
+  margin-block-start: clamp(65px, calc(100% / 6), 173px);
   }
 
   .header_description {
@@ -432,7 +449,7 @@
   
   .main {
     gap: 80px;
-    padding: 0px 20px;
+    margin-block-start: 60px;
     margin-block-end: 60px;
   }
 
@@ -448,6 +465,8 @@
   }
 
   .info-content-text-item {
+    display: flex;
+    flex-direction: column;
     gap: 10px;
     flex: 1 1 0px;
   }
@@ -464,6 +483,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    padding: 0 20px;
   }
 
   .info-content-text {
@@ -566,6 +586,11 @@
   .header {
     height: 768px;
   }
+
+  .header::after {
+    bottom: var(--page-padding);
+    left: var(--page-padding);
+  }
   
   .header__theme-menu {
     display: flex;
@@ -581,15 +606,15 @@
     font-size: 18px;
   }
 
-    .header_title {
-    display: flex;
-    align-items: center;
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    line-height: 83%;
-    grid-column: 1/4;
-    grid-row: 2;
-    margin-block-start: 273px;
-    margin-block-end: 114px;
+  .header_title {
+  display: flex;
+  align-items: center;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  line-height: 83%;
+  grid-column: 1/4;
+  grid-row: 2;
+  margin-block-start: 273px;
+  margin-block-end: 114px;
   }
 
   .header_description {
@@ -604,7 +629,7 @@
 
   .main {
     gap: 80px;
-    padding: 0px 20px;
+    margin-block-start: 60px;
     margin-block-end: 60px;
   }
 
@@ -620,6 +645,8 @@
   }
 
   .info-content-text-item {
+    display: flex;
+    flex-direction: column;
     gap: 10px;
     flex: 1 1 0px; /* flex-grow, flex-shrink и flex-basis*/
     width: 100%;
@@ -632,7 +659,8 @@
   .info-content:nth-child(2) {
     display: flex;
     flex-direction: column;
-    width: 100%
+    width: 100%;
+    padding: 0 20px;
   }
 
   .info-content-text {

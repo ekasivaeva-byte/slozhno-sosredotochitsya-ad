@@ -23,10 +23,6 @@
   display: none;
 }
 
-.theme-light .header.decorated-zone::before,
-.theme-light .header.decorated-zone::after {
-  display: none;
-}
 @media (prefers-color-scheme: light) {
   .theme-auto .page {
     background: url('../images/cover-image-light.png');
@@ -48,11 +44,6 @@
   }
 
   .theme-auto .rec-label {
-    display: none;
-  }
-
-  .theme-auto .header.decorated-zone::before,
-  .theme-auto .header.decorated-zone::after {
     display: none;
   }
 }
