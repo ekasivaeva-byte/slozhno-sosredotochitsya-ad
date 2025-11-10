@@ -354,6 +354,8 @@
 
   .footer {
     height: 668px;
+    max-height: 668px;
+    overflow: hidden;
     position: relative;
     display: grid;
     grid-template-rows: 1fr 2fr 1fr;
@@ -541,6 +543,8 @@
 
   .footer {
     height: 1010px;
+    max-height: 1010px;
+    overflow: hidden;
     position: relative;
     display: grid;
     grid-template-rows: 1fr 2fr 1fr;
@@ -749,6 +753,8 @@
 
   .footer {
     height: 780px;
+    max-height: 780px;
+    overflow: hidden;
     position: relative;
     display: grid;
     grid-template-rows: 1fr 2fr 1fr;
