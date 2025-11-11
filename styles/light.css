@@ -11,11 +11,11 @@
 }
 
 .theme-light .page {
-  background: url('../images/cover-image-light.png');
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
   background-color: var(--page-bd-color);
+}
+
+.theme-light .header {
+  background-image: var(--background-image);
 }
 
 /* Скрываем REC в светлой теме */
@@ -25,11 +25,11 @@
 
 @media (prefers-color-scheme: light) {
   .theme-auto .page {
-    background: url('../images/cover-image-light.png');
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
     background-color: var(--page-bd-color);
+  }
+
+  .theme-auto .header {
+    background-image: var(--background-image);
   }
 
   .theme-auto {
