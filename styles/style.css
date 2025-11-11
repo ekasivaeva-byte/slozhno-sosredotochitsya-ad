@@ -6,6 +6,7 @@
   font-weight: var(--text-menu-bold);
   width: 100%;
   background: var(--page-bd-color);
+  background-attachment: fixed;
 }
 
 .rec-label {
@@ -356,9 +357,6 @@
   }
 
   .footer {
-    height: 668px;
-    max-height: 668px;
-    overflow: hidden;
     position: relative;
     display: grid;
     grid-template-rows: 1fr 2fr 1fr;
@@ -545,8 +543,6 @@
   }
 
   .footer {
-    height: 1010px;
-    max-height: 1010px;
     overflow: hidden;
     position: relative;
     display: grid;
@@ -755,8 +751,6 @@
   }
 
   .footer {
-    height: 780px;
-    max-height: 780px;
     overflow: hidden;
     position: relative;
     display: grid;
